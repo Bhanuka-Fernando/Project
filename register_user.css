@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;   
+}
+
+.head1{
+    position: relative;
+    overflow: hidden;  
+    width: 100%;
+    height: 420%;
+    background-color: rgb(195, 195, 246);   
+}
+
+.logo{
+    width: 80px;
+    height: 70px;
+    z-index: 3;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+   
+}
+
+nav ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+}
+
+
+.small{
+    font-size: 12px;
+    color: black;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+nav ul .btn li a{
+    background-color: rgb(91, 43, 91);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 5px 0px 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+nav ul .btn li a:hover{
+    color: white;
+    background-color: black;
+    transform:scale(1.2);    
+}
+
+nav ul .btn .rep{
+    background-color:rgb(195, 195, 246);
+    border: 2px solid black;
+    color: black;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown :hover{
+    text-decoration: underline ;
+}
+
+.dropdown-content {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(165, 165, 216);
+    min-width: 360px;
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(130, 130, 183);
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block ;
+}
+
+.head1 nav h1{
+    font-size: 40px;
+    border: 3px solid black;
+    height: 60px;
+    width: 300px;
+    padding-left: 16px;
+    padding-top: 10px;
+    background: rgb(180, 205, 248);
+}
+                                        /*head2*/
+.head2{
+    text-align: center;
+}
+
+.plan h6{
+    padding-top: 40px;
+    font-size: 30px;
+}
+
+.plan h1{
+    font-size: 60px;
+    padding: 25px;
+    color: rgb(62, 25, 25);
+}
+
+.plan p{
+    font-size: 20px;
+    color: rgb(55, 55, 55);
+}
+
+.lis ul li {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    display: block;
+    padding: 5px;
+    background: rgb(213, 212, 212);
+    border-radius: 30px;
+    padding: 10px 20px 10px 20px;
+    margin: 35px;
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.lis ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+                                                /* HEAD 3 */
+.head3{
+    background: rgb(255, 255, 255);
+    width: 80%;
+    height: 55%;
+    margin: 80px 0px 0px 150px;
+    
+}
+
+.content{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 30px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+
+}
+
+.head3 .content > div {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #000;
+    padding-top: 20px; 
+    box-sizing: border-box;    
+}
+
+.content h1{
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.content button{
+    display: block;
+    width: 200px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #395a38;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px 0px 0px 30px;
+}
+
+.content p{
+    font-size: 40px;
+    color: rgb(17, 72, 17);
+}
+
+.content h6{
+    margin-top: 70px;
+    font-size: 13px;
+}
+
+.four h6{
+    margin-bottom: 60px;
+    margin-top: 70px;
+}
+
+.content a{
+    text-decoration: none;
+    text-decoration-thickness: 2px;
+    border-bottom: 2px solid #192c18;
+    color: #192c18;
+}
+
+.content ul{
+    margin-top: 40px;
+    list-style: none;
+    text-align: left;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.content i{
+    padding-right: 10px;
+    color: #378234;
+}
+
+.one{
+    margin-top: -760px;
+}
+
+.two{
+    margin-top: -480px;
+}
+
+.three{
+    margin-top: -120px;
+}
+
+.four{
+    margin-top: 42px;
+}
+
+.head3 .content > div.four {
+    border-right: none;
+}
+
+
+
+.fotter{                                     /* FOTTER PART */
+    width: 100%;
+    height: 73%;
+    background: #000000;
+    margin-top: 20px;
+}
+
+.fotter .f1{
+    display: flex;
+}
+
+.fotter .f1 h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.fotter h1 a {
+    font-family: 'Times New Roman', Times, serif;  
+    color: rgb(0, 154, 154);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(0, 154, 154); 
+    padding-bottom: 2px; 
+
+}
+
+.fotter ul li a{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.fotter ul {
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+.fotter ul li{
+    display: inline-block;
+}
+
+.fotter hr{
+    margin-top: 50px;
+}
+
+.fotter h1{
+    color: rgb(157, 145, 145);
+    font-size: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 190px;
+    margin-top: 50px;
+}
+
+.contact .c1 li a{
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.contact{
+    margin-left: -110px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+

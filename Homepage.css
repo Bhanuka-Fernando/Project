@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;   
+}
+
+.head1{
+    position: relative;
+    overflow: hidden;  
+    width: 100%;
+    height: 100%;
+    background-color: rgb(195, 195, 246);   
+}
+
+.logo{
+    width: 80px;
+    height: 70px;
+    z-index: 3;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+   
+}
+
+nav ul li a {
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+}
+
+
+.small{
+    font-size: 12px;
+    color: black;
+    font-weight: lighter;
+    line-height: 20px;
+}
+
+nav ul .btn li a{
+    background-color: rgb(91, 43, 91);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 5px 0px 5px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+nav ul .btn li a:hover{
+    color: white;
+    background-color: black;
+    transform:scale(1.2);    
+}
+
+nav ul .btn .rep{
+    background-color:rgb(195, 195, 246);
+    border: 2px solid black;
+    color: black;
+}
+
+.details{
+    margin-left: 8%;
+    margin-top: 15%;
+}
+
+span{
+    color: goldenrod;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    margin: auto;
+}
+
+
+
+.details p{
+    color: black ;
+    line-height: 22px;
+}
+
+.details a{
+    background-color: rgb(91, 43, 91);
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.details a:hover{
+    color: white;
+    background-color: black;
+    transform:scale(1.2);
+    
+}
+
+.details .rep{
+    background-color:rgb(195, 195, 246);
+    border: 2px solid black;
+    color: black;
+    margin-left: 30px;
+}
+
+.img{
+   width: 500px;
+   height: 500px;
+   margin-right: 120px;
+   border-radius: 20px;
+}
+
+.customer{
+    color: brown;
+}
+
+.para{
+    padding-left: 55px;
+}
+
+.para h1{
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.para p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+
+
+.arrow{
+    color:rgb(105, 104, 104);
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin: 0px 0px 0px 40px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown :hover{
+    text-decoration: underline ;
+}
+
+.dropdown-content {
+    margin-top: 20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(165, 165, 216);
+    min-width: 360px;
+    white-space: nowrap;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(130, 130, 183);
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block ;
+}
+         
+                                                                /*ChatBot*/
+input[type="checkbox"]{
+    display: none;
+}
+
+#show:checked ~ .chat_box{
+    display: block;
+}
+
+.chat_icon{
+    
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    font-size: 40px;
+    color:#000000;
+    cursor: pointer;
+    z-index: 1000;
+    
+}
+
+.chat_box{
+    display: none;        
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 450px;
+    height: 370px;
+    background: #dedbf4;
+    border-radius: 32px;
+    z-index: 1000;
+    border: 2px solid black;
+}
+
+.logo2{
+    width: 50px;
+    height: 40px;
+    z-index: 3;
+}
+
+.chat_head{  
+    background-color: rgb(4, 6, 71);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 15px;
+    display: flex;
+}
+
+.chat_box h2{
+    padding-left: 90px;
+    margin-top: 3px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.chat_box input{
+    margin-top: 180px;
+    padding: 10px;
+    width: 380px;
+    border-radius: 20px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.chat_box p{
+    margin: 30px 270px 0px 0px;
+    
+}
+
+.head2{                                             /* HEAD 2 */
+    position: relative;
+    overflow: hidden;  
+    width: 100%;
+    height: 140%;
+    background-color: rgb(162, 162, 223);   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.p1 {
+    margin-left: 50px;
+}
+
+.p1 h1{
+    font-size: 60px;
+    line-height: 70px;
+}
+
+.p1 p{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.p1 img{
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 650px;
+    height: 400px;
+}
+
+.form{
+    width: 400px;
+    height: 500px;
+    background: rgb(240, 209, 209);
+    margin-right: 70px;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.button{
+    display: block;
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #777777;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0px 0px 60px;
+}
+
+.forum{
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 400px; /* Adjust this value based on your layout */
+}
+
+.forum input{
+    width: 260px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.forum a{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(91, 43, 91);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0px 0px 20px;
+}
+
+.head3{                                         /* HEAD 3 */
+    position: relative;
+    overflow: hidden;  
+    width: 100%;
+    height: 150%;
+    background-color: rgb(196, 196, 243);   
+}
+
+.head3 h5{
+    font-size: 20px;
+    padding: 20px;
+    margin-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.head3 hr{
+    border-color: black;
+    background-color: black;
+    height: 2px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.p2{
+    display: flex;
+}
+
+.p2 img{
+    width: 400px;
+    height: 600px;
+    padding: 290px 0px 0px 100px;
+}
+
+
+.services h1{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 90px;
+    padding-left: 80px;
+    padding-bottom: 60px;
+}
+
+.services a{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    width: 250px;
+    height: 80px;
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 120px;
+    padding-block: 20px;
+    padding-block-end: 20px;
+    padding-inline-start: 45px;
+    margin-block-start: 30px;
+    line-height: 45px;
+}
+
+.services a:hover{
+    background: rgb(222, 222, 222);
+}
+.small2{   
+    font-size: 12px;
+    color: rgb(72, 67, 67);
+    font-weight: lighter;
+    line-height: 10px;
+}
+
+.services i{
+    margin-left:-35px;
+    margin-right: 8px;
+}
+
+
+
+.fotter{                                     /* FOTTER PART */
+    width: 100%;
+    height: 73%;
+    background: #000000;
+
+}
+
+.fotter .f1{
+    display: flex;
+}
+
+.fotter .f1 h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 60px;
+    margin-left: 80px;
+}
+
+.fotter h1 a {
+    font-family: 'Times New Roman', Times, serif;  
+    color: rgb(0, 154, 154);
+    text-decoration: none;
+    border-bottom: 2px solid rgb(0, 154, 154); 
+    padding-bottom: 2px; 
+
+}
+
+.fotter ul li a{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.fotter ul {
+    margin-top: 70px;
+    margin-left: 120px;
+}
+
+.fotter ul li{
+    display: inline-block;
+}
+
+.fotter hr{
+    margin-top: 50px;
+}
+
+.fotter h1{
+    color: rgb(157, 145, 145);
+    font-size: 150px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 190px;
+    margin-top: 50px;
+}
+
+.contact .c1 li a{
+    font-size: 13px;
+    color: whitesmoke;
+}
+
+.contact{
+    margin-left: -110px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
